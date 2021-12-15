@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.stylesEditorMarkdown{ 
+  background: #034363; 
+  font-family: sans-serif;
+  height: 100vh;
+}
+.stylesEditorMarkdown, pre{
+  padding: 0; 
+  margin: 0 auto;
+}
+.stylesEditorMarkdown .cont-prev-editor-basic{ 
+  height: calc(100% - 40px);
+}
+.stylesEditorMarkdown .cont-prev-editor-complete{
+  height: calc(100% - 80px);
+}
+.stylesEditorMarkdown #editor, #preview{
+  box-sizing: border-box;
+  width: 97.5%; height: 95%;
+  padding: 10px; margin: 0 auto;
+  border: 5px solid #168aad;
+  border-radius: .3rem;  
+  overflow-wrap: break-word;
+  overflow-y: scroll;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stylesEditorMarkdown #editor::selection, 
+.stylesEditorMarkdown #preview pre::selection, 
+.stylesEditorMarkdown #preview code::selection,
+.stylesEditorMarkdown #preview span::selection {
+  background: rgba(175,215,240,.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stylesEditorMarkdown #preview img{
+  box-shadow: 0px 4px 9px rgba(0,0,0,.2), 
+      0px 10px 11px grey;
+  border: 7px solid #3f403f;
+  border-radius: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.stylesEditorMarkdown .bottomBar, .topBar{
+  background: #168aad;
+  padding: 2.5px 0; 
+  height: 40px;
+  user-select: none;
 }
-
-.App-link {
-  color: #61dafb;
+.stylesEditorMarkdown .topBar{
+  top: 0;
+} 
+.stylesEditorMarkdown .bottomBar{
+  bottom: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stylesEditorMarkdown .bottomBar .MuiButtonBase-root,
+.stylesEditorMarkdown .btns-aux .MuiButtonBase-root,
+.stylesEditorMarkdown .topBar .MuiButtonBase-root{
+  font-weight: bold;
+  width: max-content;
+  background: #f3f3f3;
+  margin: 0 5px;  
+  height: 35px;
+}
+.stylesEditorMarkdown .select{
+  background: #ffb703 !important;
+}
+ 
+.stylesEditorMarkdown .topBar > #text-info{
+  position: absolute;
+  padding: 3px;
+  bottom: auto;
+  top: 4px;
+  left: 50px;
+  border-radius: 5px;
+  font-size: .8em;
 }

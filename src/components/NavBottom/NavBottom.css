@@ -1,0 +1,23 @@
+.stylesEditorMarkdown .bottomBar > .btns-aux {
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+.stylesEditorMarkdown .bottomBar > .btns-aux > #btn-info,
+.stylesEditorMarkdown .bottomBar > .btns-aux > #btn-git { 
+    background: #3f403f;
+    color: #168aad;
+    bottom: 1px;
+    margin: 0;
+    margin-right: 5px;
+}
+.stylesEditorMarkdown .bottomBar #typography-title{
+    height: 25px;
+    left: 0; 
+    background: #3f403f; 
+    color: #168aad; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    padding: 0 10px;
+    box-shadow: 0px 4px 9px rgba(0,0,0,.2);
+}

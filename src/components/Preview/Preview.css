@@ -1,0 +1,33 @@
+.stylesEditorMarkdown #preview{ 
+    background: #fbfbf2; 
+  }
+  
+  .stylesEditorMarkdown #preview  code,
+  .stylesEditorMarkdown #preview > pre {
+    padding: 2px;
+    background: #3f403f;
+    color: white; border-radius: 5px;
+    max-width: 95%;
+    font-weight: bold;
+  }
+  .stylesEditorMarkdown #preview > pre {
+    padding: 10px;
+    box-shadow: 0px 4px 9px rgba(0,0,0,.2), 
+      0px 10px 11px grey;
+  }
+  .stylesEditorMarkdown #preview > blockquote {
+    padding: 10px;
+    width: auto;
+    background: #f3f3f3;
+    border-radius: 5px;
+    box-shadow: 0px 4px 9px rgba(0,0,0,.2) 
+  }
+  .stylesEditorMarkdown #preview > h1 {
+    background: #ccc; 
+  }
+  .stylesEditorMarkdown #preview > h2,
+  .stylesEditorMarkdown #preview > h3, .stylesEditorMarkdown #preview > h4,
+  .stylesEditorMarkdown #preview > h5, .stylesEditorMarkdown #preview > h6
+  {
+    padding-left: 15px; background: #ddd; 
+  }

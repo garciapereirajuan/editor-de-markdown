@@ -1,0 +1,11 @@
+.stylesEditorMarkdown #editor{
+    resize: none;
+    color: rgb(45, 175, 70);
+    background: #3f403f;
+    font-weight: bold; 
+    font-size: 1.2em;
+}
+.stylesEditorMarkdown #editor:focus{
+    outline: none; 
+    border-color: #ffb703;
+}
